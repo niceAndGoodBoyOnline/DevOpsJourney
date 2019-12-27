@@ -5,24 +5,18 @@ body {
 }
 
 h1{
+	
 	text-align:center;
-}
-
-p,  div {
-	background: rgb(255, 255, 255);
-	background: rgba(255, 255, 255, 0.96);
-	float: left;
-	margin: 3vw;
-	padding: 2vw;
-	border: .1vw solid rgb(200, 200, 200);
-	border: .1vw solid rgba(0, 0, 0, 0.2);
-	border-radius: 1vw;
-	box-shadow: .2vw .3vw 2vw rgba(0, 0, 0, 0.2);
 }
 
 br {
 	clear: both;
 }
+
+button{
+	border-radius: 2%
+}
+
 
 connection {
 	z-index: -1;
@@ -47,6 +41,18 @@ inner {
 	color: #668;
 }
 
+.node {
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.96);
+	float: left;
+	margin: 3vw;
+	padding: 2vw;
+	border: .1vw solid rgb(200, 200, 200);
+	border: .1vw solid rgba(0, 0, 0, 0.2);
+	border-radius: 1vw;
+	box-shadow: .2vw .3vw 2vw rgba(0, 0, 0, 0.2);
+}
+
 .anchor {
 	display: block;
 	width: 0;
@@ -54,7 +60,7 @@ inner {
 	margin-left: 1em;
 }
 
-.more {
+.personal {
 	float: right;
 	font-weight: bold;
 }
@@ -78,15 +84,20 @@ inner {
 
 
 .sidenav {
-	height: 50%; 
+	height: 60%; 
 	width: 0;
 	position: fixed; 
 	z-index: 1;
 	top: -6vh; 
-	left: -10vw;
-	background-color: #57F;
+	left: -7vw;
+	background-color: #9ea7e4;
 	overflow: hidden;
-	transition: .1s;
+	transition: .17s;
+	padding: 2vw;
+	border: .1vw solid rgb(200, 200, 200);
+	border: .1vw solid rgba(0, 0, 0, 0.2);
+	border-radius: 1vw;
+	box-shadow: .2vw .3vw 2vw rgba(0, 0, 0, 0.2);
 }
 
 
@@ -96,28 +107,147 @@ inner {
 	font-size: 3.5vh;
 	color: #111;
 	display: block;
-	transition: 1.3s;
 }
 
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-	color: #f1f1f1;
-}
-
-/* Position and style the close button (top right corner) */
 .sidenav .closebtn {
 	position: absolute;
-	bottom: 0;
-	right: 2vw;
-	font-size: 4em;
-	padding: 1vw;
-	margin-left: 2vw;
+	bottom: -2.75vh;
+	right: 0vw;
+	font-size: 3vw;
 }
 
 #mainContent {
 	transition: margin-left .5s;
-	padding: 20px;
+	padding: .5vh;
 	z-index: -10;
 	background: rgb(255, 255, 255);
 	background: rgba(255, 255, 255, 0.4);
+}
+
+.container{
+	padding: .5vw 0;
+	margin: 0 auto;
+	width: 100vw;
+	height: 55vh;
+}
+
+
+.gallery-wrap {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: left;
+	flex-direction: row;
+	width: 95%;
+	height: 50vh;
+}
+
+.item {
+	display:block;
+	flex: 1;
+	overflow: hidden;
+	transition: flex 0.17s;
+	border: .1vw solid rgb(200, 200, 200);
+	border: .1vw solid rgba(0, 0, 0, 0.2);
+	border-radius: 1vw;
+	box-shadow: .2vw .3vw 2vw rgba(0, 0, 0, 0.2);
+}
+	
+.item p{
+	padding: 0 4vw 0;
+	text-align: justify;
+	display: none;
+}
+	
+
+.item-1{ 
+	background-color: #e3e7f1;
+}
+.item-2{ 
+	background-color: #e1edf1;
+}
+.item-3{ 
+	background-color: #def1ec;
+}
+.item-4{ 
+	background-color: #dcf1e1;
+}
+.item-5{ 
+	background-color: #dff0d9;
+}
+.item-6{ 
+	background-color: #e9f0d7;
+}
+.item-7{ 
+	background-color: #f0ead4;
+}
+
+button{
+	position:relative;
+}
+	
+button span {
+	position: absolute;
+	top: 0;
+	left: 1vw;
+}
+
+.item-1 p, .item-2 p, .item-3 p, .item-4 p, .item-5 p, .item-6 p, .item-7 p{
+	font-size: 2vw;
+}
+
+
+@media screen and (orientation:portrait){
+	
+	button{
+		position:relative;
+	}
+	
+	button span {
+		position: absolute;
+		top: 0;
+		left: 3vw;
+	}
+	
+	.item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7 {
+		font-size: 1.5vh;
+		
+	}
+	
+	.item-1 p, .item-2 p, .item-3 p, .item-4 p, .item-5 p, .item-6 p, .item-7 p{
+		font-size: 4vw;
+		position: absolute;
+		top:3vh;
+		left:1vw;
+	}
+	
+	
+	.gallery-wrap {
+		overflow-y:scroll;
+		flex-direction: column;
+		height: 70vh;
+		width: 90vw;
+		
+	}
+	
+	.sidenav {
+		height: 75%;
+		position: fixed; 
+		z-index: 1;
+		top: -6vh; 
+		left: -10vw;
+		transition: .17s;
+		margin: 3vw;
+		padding: 2vw;
+	}
+	
+	.sidenav .closebtn {
+		position: absolute;
+		bottom: -2vh;
+		right: .25vw;
+		font-size: 4vh;
+	}
 }
