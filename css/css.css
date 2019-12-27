@@ -1,0 +1,123 @@
+body {
+	background: #f4f4f4 url('../img/bg.jpg') no-repeat fixed center;
+	font-size: 1.5em;
+	font-family: monospace;
+}
+
+h1{
+	text-align:center;
+}
+
+p,  div {
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.96);
+	float: left;
+	margin: 3vw;
+	padding: 2vw;
+	border: .1vw solid rgb(200, 200, 200);
+	border: .1vw solid rgba(0, 0, 0, 0.2);
+	border-radius: 1vw;
+	box-shadow: .2vw .3vw 2vw rgba(0, 0, 0, 0.2);
+}
+
+br {
+	clear: both;
+}
+
+connection {
+	z-index: -1;
+	border: .2vw solid;
+	border-radius: 7em;
+	color: rgb(128, 128, 128);
+	color: rgba(0, 0, 0, 0.5);
+}
+
+connection.odd {
+	border-radius: 100;
+}
+
+connection.first {
+	color: black;
+	border: .5vw dotted;
+}
+
+inner {
+	border: .25vw solid;
+	border-radius: 1vw;
+	color: #668;
+}
+
+.anchor {
+	display: block;
+	width: 0;
+	margin-top: 0.1em;
+	margin-left: 1em;
+}
+
+.more {
+	float: right;
+	font-weight: bold;
+}
+
+.projects{
+	float: right;
+	max-width: 30vw;
+	font-size: .7em;
+}
+.overview{
+	font-size: 1.5em;
+	max-width:50vw;
+}
+
+.title{
+	max-width: 50vw;
+	cursor:pointer;
+	font-size: 1.5em;
+	background-color: rgba(200,200,200,.7)
+}
+
+
+.sidenav {
+	height: 50%; 
+	width: 0;
+	position: fixed; 
+	z-index: 1;
+	top: -6vh; 
+	left: -10vw;
+	background-color: #57F;
+	overflow: hidden;
+	transition: .1s;
+}
+
+
+.sidenav a {
+	padding: 4vh .5vw 2vh 6vw;
+	text-decoration: none;
+	font-size: 3.5vh;
+	color: #111;
+	display: block;
+	transition: 1.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+	color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+	position: absolute;
+	bottom: 0;
+	right: 2vw;
+	font-size: 4em;
+	padding: 1vw;
+	margin-left: 2vw;
+}
+
+#mainContent {
+	transition: margin-left .5s;
+	padding: 20px;
+	z-index: -10;
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.4);
+}
