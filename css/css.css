@@ -1,12 +1,43 @@
 body {
 	background: #f4f4f4 url('../img/bg.jpg') no-repeat fixed center;
-	font-size: 1.5em;
+	font-size: 1.6vw;
 	font-family: monospace;
 }
 
 h1{
-	
 	text-align:center;
+}
+
+li,
+pre {
+	border: .1vw solid rgb(200, 200, 200);
+	border: .1vw solid rgba(0, 0, 0, 0.2);
+	border-radius: 1vw;
+	box-shadow: .2vw .3vw 2vw rgba(0, 0, 0, 0.2);
+	color: white;
+	background: #efeae2;
+	display: block;
+	margin: 0.1vw 0 0 0;
+	padding: 0.3vw 1vh;
+}
+
+a{
+	color: #a6abef;
+}
+
+a:visited {
+	color: #efa6ab;
+}
+
+a:hover{
+	color: white;
+}
+
+pre {
+	font: 0.9em monospace;
+	font-weight: bold;
+	background: #ddd;
+	color: #555;
 }
 
 br {
@@ -16,7 +47,6 @@ br {
 button{
 	border-radius: 2%
 }
-
 
 connection {
 	z-index: -1;
@@ -30,9 +60,16 @@ connection.odd {
 	border-radius: 100;
 }
 
-connection.first {
+connection.dashed {
 	color: black;
-	border: .5vw dotted;
+	border: 1vw dashed;
+}
+
+connection.timePeriod{
+	border-style: ridge outset;
+	border-width: .8vw;
+	border-bottom-left-radius: 70;
+	border-color: #86909f;
 }
 
 inner {
@@ -68,7 +105,7 @@ inner {
 .projects{
 	float: right;
 	max-width: 30vw;
-	font-size: .7em;
+	font-size: 1.4vw;
 }
 .overview{
 	font-size: 1.5em;
@@ -120,6 +157,8 @@ inner {
 	transition: margin-left .5s;
 	padding: .5vh;
 	z-index: -10;
+	flex: 1;
+	overflow-y: hidden;
 	background: rgb(255, 255, 255);
 	background: rgba(255, 255, 255, 0.4);
 }
