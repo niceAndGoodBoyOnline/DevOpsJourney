@@ -26,19 +26,21 @@ let contentForNav = {
 	
 	+ '<div class="gallery-wrap">'
 	
-    + '<button class="item item-1" id="1420" onclick="flexThis(this)">	<span><h2>1420</h2>	</span>	<p id="1420Desc">	An excellent primary with all topics relevent to my journey! It\'s not possible to cover every aspect of Systems Administration in 15 weeks, but every assignment and lecture contained key information. The instructor stressed that </p>	</button>'
+    + '<button class="item item-1" id="1420" onclick="flexThis(this)">	<span><h2>1420</h2>	</span>	<p id="1420Desc">	An excellent primer with all topics relevent to my journey! It\'s not possible to cover every aspect of Systems Administration in 15 weeks, but every assignment and lecture contained key information. </p>	</button>'
 	
-    + '<button class="item item-2" id="1515" onclick="flexThis(this)">	<span><h2>1515</h2></span>	<p id="1515Desc">	text</p></button>'
+    + '<button class="item item-2" id="1515" onclick="flexThis(this)">	<span><h2>1515</h2></span>	<p id="1515Desc">	Coding fundaments course which covered essentials such as dictionaries, file i/o, user input and basic algorithms</p></button>'
 	
-    + '<button class="item item-3" id="1630" onclick="flexThis(this)">	<span><h2>1630</h2></span>	<p id="1630Desc">	</p></button>'
+    + '<button class="item item-3" id="1630" onclick="flexThis(this)">	<span><h2>1630</h2></span>	<p id="1630Desc">	Theortical and practical introductitexton to Relational Databases and SQL.</p></button>'
 	
-    + '<button class="item item-4" id="1620" onclick="flexThis(this)">	<span><h2>1620</h2><span>	<p id="1620Desc">	</p></button>'
+    + '<button class="item item-4" id="1620" onclick="flexThis(this)">	<span><h2>1620</h2><span>	<p id="1620Desc">	Basic web programing course covering HTML, CSS and simple JS.</p></button>'
 	
     + '<button class="item item-5" id="1310" onclick="flexThis(this)">	<span><h2>1310</h2></span>	<p id="1310Desc">	The highlight of this course was the 90 minutes we spent discussing BigO notation! The rest of the material shed light on how computers operate on the metal and some fundamental algorithmic insights.</p></button>'
 	
 	+ '<button class="item item-6" id="1100" onclick="flexThis(this)">	<span><h2>1100</h2></span>	<p id="1100Desc">	Somewhat difficult to parse the value of this course beyond additional experience working in teams. The majority of the material is aimed at business students who want to manage people. Did not align with DevOps or Agile principals which I regularly insistent were relavent and perhaps more important in the context of the CIT program as a whole.</p></button>'
 	
-    + '<button class="item item-7" id="1116" onclick="flexThis(this)">	<span><h2>1116</h2></span>	<p id="1116Desc">	</p></button>' + 	'</div></div>',
+	+ '<button class="item item-7" id="1116" onclick="flexThis(this)">	<span><h2>1116</h2></span>	<p id="1116Desc">	Communications course which focused on effective and appropriate communications within the workplace.</p></button>' 
+	
+	+ 	'</div></div>',
 	
 	winterBreak:'Personal Projects Winter 2019:<br>'
 	
@@ -47,12 +49,10 @@ let contentForNav = {
 	+ '<div class="gallery-wrap">'
 	
     + '<button class="item item-1" id="doj" onclick="flexThis(this)">	<span><h2>DevOps Journal</h2></span>	<p id="dojDesc">Built this webpage to keep track of the process of becoming excellent at the things I do.</p>	</button>'
+		
+    + '<button class="item item-3" id="DogPetterPro" onclick="flexThis(this)">	<span><h2>DogPetterPro</h2></span>	<p id="DogPetterProDesc">Revisiting Dog Petter to "force" landscape, improve responsiveness, and optimize for web.</p></button>'
 	
-    + '<button class="item item-2" id="quikLabs" onclick="flexThis(this)">	<span><h2>QuikLabs DevOps</h2></span>	<p id="quikLabsDesc"></p></button>'
-	
-    + '<button class="item item-3" id="DogPetterPro" onclick="flexThis(this)">	<span><h2>DogPetterPro</h2></span>	<p id="DogPetterProDesc">Revisiting Dog Petter to force landscape, improve responsiveness, and optimize for web.</p></button>'
-	
-	+ '<button class="item item-4" id="dualBoot" onclick="flexThis(this)">	<span><h2>Dual Boot Hackintosh/Linux</h2></span>	<p id="dualBootDesc">text</p></button>',
+	+ '<button class="item item-4" id="dualBoot" onclick="flexThis(this)">	<span><h2>Dual Boot Hackintosh/Linux</h2></span>	<p id="dualBootDesc">Researched and sourced hardware for a commissioned custom build PC. 800CAD desktop running elementaryOS and macOS Mojave. </p></button>',
 	
 	winter20:'Level 2',
 	
@@ -254,7 +254,6 @@ $(document).ready(function() {
 	
 	$("div.winter20").connections({to: "div.summerBreak",class:"timePeriod"});
 	
-	$("connection:odd").addClass("odd");
 
 
 	let connections = $("connection, inner");
